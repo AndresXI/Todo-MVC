@@ -24,10 +24,8 @@ TodoView = Backbone.View.extend({
     if (this.model.get('completed')) {
       this.model.set('completed', false);
     } else {
-      this.model(set('completed', true));
+      this.model.set('completed', true);
     }
-
-    console.log(this.model.get('completed'));
   },
 
 
